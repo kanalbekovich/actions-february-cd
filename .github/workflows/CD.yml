@@ -2,18 +2,18 @@ name: CD
 
 
 on:
-  # push:
-  #   branches: ["main"]
-  workflow_dispatch:
-    inputs:
-      image:
-        required: true
-        description: 'Enter image repository'
-        default: ''
-      tag:
-        required: true
-        description: 'Enter image tag'
-        default: ''
+  push:
+    branches: ["main"]
+  # workflow_dispatch:
+  #   inputs:
+  #     image:
+  #       required: true
+  #       description: 'Enter image repository'
+  #       default: ''
+  #     tag:
+  #       required: true
+  #       description: 'Enter image tag'
+  #       default: ''
 
 jobs:
   deploy:
