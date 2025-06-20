@@ -1,0 +1,9 @@
+deployment:
+  image: 
+    repository: kanalbekovich/flask-myapp
+    tag: "1.0.0"
+  port: 5000
+
+service: 
+  port: 80
+  type: LoadBalancer
